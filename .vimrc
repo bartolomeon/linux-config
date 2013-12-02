@@ -55,5 +55,17 @@ let g:html_indent_style1 = "inc"
 nmap <F8> :TagbarToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 
+execute pathogen#infect()
 
 set ts=4
+set relativenumber
+
+
+syntax enable
+colorscheme solarized
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+
