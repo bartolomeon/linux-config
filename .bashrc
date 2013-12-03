@@ -144,3 +144,4 @@ export CXF_HOME JAVA_HOME MAVEN_PATH NODE_PATH
 # with source-highlight package it makes syntax colouring for source code
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
+export TERM="xterm-256color"

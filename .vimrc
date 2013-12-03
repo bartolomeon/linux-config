@@ -56,10 +56,12 @@ nmap <F8> :TagbarToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 execute pathogen#infect()
+execute pathogen#helptags()
 
 set ts=4
 set relativenumber
 
+let g:solarized_termcolors=256
 
 syntax enable
 colorscheme solarized
@@ -69,3 +71,17 @@ else
     set background=dark
 endif
 
+
+" block cursor! (yep)
+" disable arrow keys
+ map <up> <nop>
+ map <down> <nop>
+ map <left> <nop>
+ map <right> <nop>
+ imap <up> <nop>
+ imap <down> <nop>
+ imap <left> <nop>
+ imap <right> <nop>
+
+" run JSHint automatically on each JS file
+ "autocmd! BufWritePost *.js JSHint
