@@ -26,7 +26,10 @@ Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
 " ...
 "
-Bundle "pangloss/vim-javascript"
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Raimondi/delimitMate'
 Bundle 'Tagbar'
 
 
@@ -58,12 +61,13 @@ map <C-n> :NERDTreeToggle<CR>
 execute pathogen#infect()
 execute pathogen#helptags()
 
-set ts=4
+"set ts=3
 set relativenumber
 
 let g:solarized_termcolors=256
 
 syntax enable
+"colorscheme distinguished
 colorscheme solarized
 if has('gui_running')
     set background=light
@@ -71,17 +75,23 @@ else
     set background=dark
 endif
 
-
 " block cursor! (yep)
 " disable arrow keys
- map <up> <nop>
- map <down> <nop>
- map <left> <nop>
- map <right> <nop>
- imap <up> <nop>
- imap <down> <nop>
- imap <left> <nop>
- imap <right> <nop>
+" map <up> <nop>
+" map <down> <nop>
+" map <left> <nop>
+" map <right> <nop>
+" imap <up> <nop>
+" imap <down> <nop>
+" imap <left> <nop>
+" imap <right> <nop>
 
 " run JSHint automatically on each JS file
  "autocmd! BufWritePost *.js JSHint
+ "
+ 
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+

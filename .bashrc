@@ -110,12 +110,15 @@ if ! shopt -oq posix; then
 fi
 
 
+GRADLE_HOME=/opt1/soft/java/gradle-1.10
 CXF_HOME=/opt1/soft/java/apache-cxf-2.7.4
 JAVA_HOME=/opt1/soft/java/jdk1.7.0_13
 MAVEN_PATH=/opt1/soft/java/apache-maven-3.0.5
 NODE_PATH=/opt1/soft/node-v0.10.20-linux-x64/bin
+NODE_PATH=$NODE_PATH:npm
 
 PATH=\
+$GRADLE_HOME/bin:\
 $NODE_PATH:\
 ~/node_modules/.bin/:\
 $JAVA_HOME/bin:\
@@ -124,13 +127,18 @@ $MAVEN_PATH/bin:\
 $CXF_HOME/bin:\
 :$PATH
 
-NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}'
+
+
+ANDROID_HOME=/opt1/soft/adt-bundle-linux-x86_64-20131030/sdk
+
+NODE_PATH="/opt1/soft/node-v0.10.20-linux-x64/lib/node_modules:/usr/local/lib/jsctags:${NODE_PATH}"
 
 alias cd_mbg='cd ~/work/netM/mbg'
 alias cd_mbg_uk='cd ~/work/netM/mbg/mbg-extern-ukthree3api'
 alias cd_mbg_fr='cd ~/work/netM/mbg/mbg-extern-frbouyguesisis'
 alias cd_mbg_swiss='cd ~/work/netM/mbg/mbg-extern-chswisscomce'
 alias cd_mbg_at='cd ~/work/netM/mbg/mbg-extern-atdcb3vasbilling'
+alias cd_pg='cd ~/work/GTM/gae-gtm-pg'
 
 alias cd_symos='cd ~/work/altom_symos/trunk'
 
@@ -139,9 +147,23 @@ alias svnkdiff='svn diff --diff-cmd kdiff3'
 alias cd_gcb='cd ~/work/netM/GCB/'
 
 
-export CXF_HOME JAVA_HOME MAVEN_PATH NODE_PATH
+export CXF_HOME JAVA_HOME MAVEN_PATH NODE_PATH ANDROID_HOME GRADLE_HOME
 
 # with source-highlight package it makes syntax colouring for source code
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
 export TERM="xterm-256color"
+
+
+
+PA_PID=$( pgrep pulseaudio -U $(id -u) )
+if [ -z $PA_PID ]; then
+  echo "Pulseaudio not running - starting new instance per-user"; 
+  pulseaudio -D;
+#else 
+  #echo "Pulseaudio already running with pid=$PA_PID";
+fi
+export NODE_PATH=/usr/local/lib/jsctags:/opt1/soft/node-v0.10.20-linux-x64/bin:npm:/opt1/soft/node-v0.10.20-linux-x64/lib/node_modules
+
+
+

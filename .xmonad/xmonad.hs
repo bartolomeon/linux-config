@@ -69,7 +69,7 @@ fullFloatFocused = withFocused $ \f -> windows =<< appEndo `fmap` runQuery doFul
 
 myXPConfig = defaultXPConfig {
                --font = "-*-terminus-*-*-*-*-*-72-*-*-*-*-u",
-               font = "xft:Bitstream Vera Sans Mono:size=9:antialias=true" ,
+               font = "xft:Bitstream Vera Sans Mono:size=10:antialias=true" ,
                bgColor = "black",
                fgColor = "wheat",
                fgHLight = "white",

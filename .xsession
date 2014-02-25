@@ -42,13 +42,23 @@ if [ -x  /usr/bin/volumeicon ] ; then
    /usr/bin/volumeicon &
 fi
 
-if [ -x /usr/bin/sonata ] ; then
-   sonata --hidden &
+#if [ -x /usr/bin/sonata ] ; then
+#   sonata --hidden &
+#fi
+
+if [ -x /usr/bin/gbemol ] ; then
+   gbemol -m &
 fi
+
 
 if [ -x /usr/bin/tomboy ] ; then
   /usr/bin/tomboy &
 fi
+
+if [ -x /usr/bin/volumeicon ] ; then
+  /usr/bin/volumeicon &
+fi
+
 
 exec xmonad
 

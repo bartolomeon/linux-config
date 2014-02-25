@@ -15,13 +15,11 @@ Config {
                 , Run Swap [] 10
                 , Run Date "%a %b %_d %l:%M" "date" 10
                 , Run BatteryP ["BAT0"]
-               ["-t", "<acstatus><watts>(<left>%)",
-               "-L", "10", "-H", "80", "-p", "3",
-               "--", "-O", "<fc=green>On</fc> - ", "-o", "",
-               "-L", "-15", "-H", "-5",
-               "-l", "red", "-m", "blue", "-h", "green",
-               "-c", "charge_full_design"]
-               600
+                ["-t", "<acstatus>"
+                , "-L", "10", "-H", "80"
+                , "-l", "red", "-h", "green"
+                , "--", "-O", "Charging", "-o", "Battery: <left>%"
+                ] 10
                 , Run StdinReader
                 ]
        , sepChar = "%"

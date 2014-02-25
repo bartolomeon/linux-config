@@ -1,0 +1,357 @@
+%!TEX encoding = UTF-8 Unicode
+\documentclass[a4paper,helvetica,narrow,booktabs]{europecv}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{anysize}
+\usepackage{color}
+\marginsize{1.5cm}{1.5cm}{1cm}{1cm}
+\input{rgb}
+
+%Personal data
+\ecvname{Nićka, Bartłomiej}
+%\ecvaddress{J.J. Żniniewiczów 11, 60-475 Poznań, Poland}
+\ecvtelephone{+48604403371}
+\ecvemail{bartek.nicka@gmail.com}
+\ecvnationality{Polish}
+\ecvdateofbirth{May 06, 1977}
+\ecvbeforepicture{\raggedleft}
+\ecvpicture[height=3cm]{bartek}
+\ecvafterpicture{\ecvspace{-3.5cm}}
+
+
+
+
+
+
+
+
+\begin{document}
+
+  \begin{europecv}
+
+    %Personal info
+    \def\ecv@infosectionkey{\color{MidnightBlue}{PERSONAL INFORMATION}}
+    \ecvpersonalinfo
+
+     %Education
+    \ecvsection{\color{MidnightBlue}{EDUCATION}}
+     \ecvitem{1996~-~2001}{Technical University of Szczecin, Poland}
+     \ecvitem{Major}{MSc and Engineer of Computer Science}
+     \ecvitem{Specialization}{Designing of Information Systems}
+     \ecvitem{Master's~thesis}{"Researching algorithms for automated loop parallelization"}
+     \ecvitem{Final~grade}{5 (Excellent) - I was receiving a knowledge scholarship during studies}
+     \ecvitem{Main courses}{Parallel Programming, Advanced Object-Oriented Design,Database Systems, Computer Networks, Intelligent Decision Support Systems}
+
+
+     \ecvsection{\color{MidnightBlue}{LANGUAGE SKILLS}}
+     %Languages
+    \ecvmothertongue[5pt]{Polish}
+    \ecvitem{\large Other language(s)}{}
+    \ecvlanguageheader{(*)}
+    \ecvlanguage{\large{English}}{\ecvCOne}{\ecvCTwo}{\ecvCOne}{\ecvCTwo}{\ecvCOne}
+    \ecvlastlanguage{\large{German}}{\ecvATwo}{\ecvATwo}{\ecvAOne}{\ecvAOne}{\ecvAOne}
+       \ecvlanguagefooter[10pt]{(*)}
+
+
+     %Work Experience
+     \ecvsection{\color{MidnightBlue}{EMPLOYMENT HISTORY}}
+
+     \ecvitem{2002~-~present}{\color{DarkBlue}Freelancer (self employed)}
+     \ecvitem{Position}{IT Consultant}
+     \ecvitem{}{}
+
+     \ecvitem{Feb~2005~-~present}{\href{http://consileon.pl}{\color{DarkBlue}{Consileon Polska Sp. z o.o.}}, Sczecin, Poland}
+     \ecvitem{Position}{IT Consultant}
+     \ecvitem{}{}
+
+
+     \ecvitem{Oct~2004~-~Feb~2005}{\href{http://consileon.de}{\color{DarkBlue}{Consileon Business Consultancy GmBH}}, Germany}
+     \ecvitem{Position}{IT Consultant}
+     \ecvitem{}{}
+
+     \ecvitem{Apr~2002~-~Oct~2004}{\href{http://www.blstream.com}{\color{DarkBlue}{BLStream (formerly BellStream)}}, Szczecin, Poland}
+     \ecvitem{Position}{Sofware/Web Developer}
+     \ecvitem{}{}
+
+     \ecvitem{Jul~2001~-~Apr~2002}{\href{http://www.macrologic.pl}{\color{DarkBlue}{MacroLogic SA (formerly MacroSoft)}}, Szczecin, Poland}
+     \ecvitem{Position}{Programmer / Trainer / Consultant}
+     \ecvitem{}{}
+
+   
+
+     \ecvsection{\color{MidnightBlue}{TRAININGS}}
+     \ecvitem{Feb~2014}{\textbf{Postgres Plus 9.0 Associate Certification}}
+     \ecvitem{}{EnterpriseDB}
+     \ecvitem{}{}
+
+     \ecvitem{Oct~2013}{\textbf{Professional SCRUM Master I}}
+     \ecvitem{}{Scrum.org}
+     \ecvitem{}{}
+
+     \ecvitem{Jun~2010}{\textbf{PRINCE2\textregistered Registered Practicioner}}
+     \ecvitem{}{APM Group Ltd, License 02326314-01-Y8ZQ}
+     \ecvitem{}{}
+    
+     \ecvitem{May~2010}{\textbf{PRINCE2\textregistered Foundation Examination}}
+     \ecvitem{}{APM Group Ltd, License 02317292-01-FECQ}
+    
+
+     \ecvsection{\color{MidnightBlue}{PROJECTS EXPERIENCE}}
+
+     \ecvitem{\textbf{Mar 2012 - Oct 2013}}{\textbf{Google Carrier Billing 3.0 / Microsoft Carrier Billing}}
+     \ecvitem{Company}{Consileon Polska}
+     \ecvitem{Customer}{\color{DarkBlue}{net-M AG, Düsseldorf, Germany}}
+     \ecvitem{Role(s)}{Technical Project Manager}
+    
+     \ecvitem{Responsibilities}{management of all technical aspects of projects, coordinating work between Google, Microsoft, net-M's and mobile operators' technical teams;  designing a custom communication flows suitable for specifics of carriers systems to match Google’s and Microsoft’s requirements. Preparing test scenarios, management of test procedures.}
+     \ecvitem{Project Description}{integration of Google’s GCB 3.0 / Microsoft’s Carrier Billing systems with payment, SMSC and CuCa systems of 3 mobile operators (Hutchison Whampoa Group: Italy, UK, Rep. of Ireland). At times, due to the tight schedule – managing up to 6 separate projects in parallel. Additionally, supporting migration from GCB2.0 to GCB3.0 for DOCOMO Japan (helping to improve performance).}
+     \ecvitem{Technologies}{Java, JMS, Apache CXF, JAXB, PostgreSQL, Maven, Bash, Linux, SMSC}
+     \ecvitem{}{}
+
+
+
+     \ecvitem{\textbf{Jul 2011 - present}}{\textbf{SyMoS (Mobile Sales System)}}
+     \ecvitem{Company}{self employed}
+     \ecvitem{Customer}{\color{DarkBlue}{Altom Sp. z o.o., Poland}}
+     \ecvitem{Role(s)}{IT Consultant, Technical Leader, Senior Developer}
+     \ecvitem{Responsibilities}{all aspects of software development lifecycle (analysis, design, technical lead, consulting, implementation)}
+     \ecvitem{Project Description}{client-server application supporting work of sales representatives; client is a native iOS application (targetted for iPad tablets), server is a Java application, integrated with existing ERP system; client application can work in offline mode syncing with server from time to time (employees are traveling also in areas without a good 3G coverage);  it lets to collect orders from customers, present an always up-to-date product catalogue with big pictures; plan and report activities during the work days; manage expenses (petrol, advance payments etc.), manages a complex rules for discounts, rebates, price groups per product/customer etc. }
+     \ecvitem{Technologies}{ client: XCode  4.x, iOS6 (iPad), Objective-C, Core Data, SQLLite\newline
+	     server: Java, JPA, Hibernate, PostgreSQL, MS SQLServer, Jetty, JSON, Linux  } 
+     \ecvitem{}{}
+
+
+     \ecvitem{\textbf{May 2011 - Jun 2011}}{\textbf{ZZSM}}
+     \ecvitem{Company}{self employed}
+     \ecvitem{Customer}{\color{DarkBlue}{Altom Sp. z o.o., Poland}}
+     \ecvitem{Role(s)}{IT Consultant, Technical Leader, Senior Developer}
+     \ecvitem{Responsibilities}{analysis, design, technical lead, consulting, implementation}
+     \ecvitem{Project Description}{a web application supporting work of sales representatives, providing agregated data from ERP system in customized form}
+     \ecvitem{Technologies}{Java, JPA, Hibernate, MS SQLServer, Jetty, JSON, Linux }
+     \ecvitem{}{}
+
+
+     \ecvitem{\textbf{Oct 2011 - Mar 2012}}{\textbf{Mobile Billing Gateway}}
+     \ecvitem{\textbf{Nov 2013 - Dec 2013}}{}
+     \ecvitem{Company}{Consileon Polska}
+     \ecvitem{Customer}{\color{DarkBlue}{net-M AG, Düsseldorf, Germany}}
+     \ecvitem{Role(s)}{Project Manager / Senior Software Developer (depending on a sub-project)}
+     \ecvitem{Responsibilities}{project management (planning, estimations, keeping track on progress), analysis, contacts with 3rd parties (mobile operators, content provider), analysis of requirements, technical lead, implementation, preparing test scenarios and test tools creation, deployment}
+     \ecvitem{Project Description}{Integration of net-M's Web/WAP payments platform with billing systems of various mobile operators (Rogers/Canada, TDC/Denmark, MetroPCS/USA) and content providers (A3 Mobile Network/USA)}
+     \ecvitem{Technologies}{Java, Apache CXF, JAXB, Maven, Tomcat, Bash, Linux}
+     \ecvitem{}{}
+
+
+     \ecvitem{\textbf{Jul 2011 - Oct 2011}}{\textbf{Aftersales processing system}}
+     \ecvitem{Company}{Consileon Polska}
+     \ecvitem{Customer}{\color{DarkBlue}{Asseco Poland S.A., Poland}}
+     \ecvitem{Role(s)}{Technical Consultant, Senior Developer}
+     \ecvitem{Responsibilities}{software development and testing, reporting and managing communication with a client}
+     \ecvitem{Project Description}{extending a workflow management software for one of the biggest insurance company in Poland; implementing tools for syncing the user profiles information with existing legacy systems}
+     \ecvitem{Technologies}{EJB3, JPA, IceFaces, JBoss AS, Tomcat, TestNG, Maven, OracleDB, Jasper Reports, Bash}
+     \ecvitem{}{}
+
+
+
+
+     \ecvitem{\textbf{May 2011 - Jul 2011}}{\textbf{EA2CMS migration}}
+     \ecvitem{Company}{Consileon Polska}
+     \ecvitem{Customer}{\color{DarkBlue}{net-M AG, Düsseldorf, Germany}}
+     \ecvitem{Role(s)}{Senior Developer}
+     \ecvitem{Responsibilities}{Technical design and implementation of the application.}
+     \ecvitem{Project Description}{A stand-alone application that is able to retrieve a mobile applications data (games, ringtones, wallpapers) from the content provider (Electronic Arts) repository; parses it, categorize, downloads all related media files, creates a package which is sent to the client’s (net-M) CMS system. In case of any errors application is able to pause, report errors via mail and later resume its work.}
+     \ecvitem{Technologies}{Java, Spring 3, Spring Integration, JAXB, Apache CXF, Maven}
+     \ecvitem{}{}
+
+     
+     \ecvitem{\textbf{Jan 2010 - Mar 2010}}{\textbf{NAFA invoicing system}}
+     \ecvitem{Company}{Consileon Polska}
+     \ecvitem{Customer}{\color{DarkBlue}{NAFA North American Fur Auctions, Canada}}
+     \ecvitem{Role(s)}{Analyst, Architect, Technical Leader}
+     \ecvitem{Responsibilities}{requirements analysis (sessions with a customer, accountants, lawyers); technical design of the application; leading a team during implementation and testing}
+     \ecvitem{Project Description}{Web application supporting invoicing and payments processes between ranchers and NAFA; project run according to Scrum methodology}
+     \ecvitem{Technologies}{Java, Spring, Apache Wicket, PostgreSQL, HSQLDB, HTML, CSS, Maven, Linux, Scrum}
+     \ecvitem{}{}
+
+
+
+     \ecvitem{\textbf{Jul 2009 - Aut 2009}}{\textbf{N/A (due to NDA)}}
+     \ecvitem{Company}{Consileon Polska}
+     \ecvitem{Customer}{\color{DarkBlue}{Entellico Sp. z o.o.}}
+     \ecvitem{Role(s)}{Technical Consultant}
+     \ecvitem{Responsibilities}{Technical Consulting}
+     \ecvitem{Project Description}{Start-up with an innovative concept, sponsored partially by EU funds.  Details of the projects are confident due to NDA. My role was a Technical Consultant and I was involved in the analysis and design phase of the project.}
+     \ecvitem{Technologies}{N/A (due to NDA)}
+     \ecvitem{}{}
+
+     \ecvitem{\textbf{May 2009 - Jan 2010}}{\textbf{Customization of ConProv system}}
+     \ecvitem{Company}{Consileon Polska}
+     \ecvitem{Customer}{{\href{http://www.planethome.de}{\color{DarkBlue}PlanetHome AG, Munich, Germany}}}
+     \ecvitem{Role(s)}{Senior Software Developer}
+     \ecvitem{Responsibilities}{leading a team responsible for integration with external interfaces; design and development of integration with existing systems (Flowfact, Extranet, Immmoplanet); extending ConProv's core interfaces; customization of reporting module (connectivity with BIRT/CrystalReports), technical support for "Formula" scripting module}
+     \ecvitem{Technologies}{J2EE, Spring, Adobe Flex, BlazeDS, Hibernate, Web Services (Apache CXF), Acegi, Quartz, ANTLRv3, Hesian, Oracle, MSSQL, DB2, MySQL, MS Access, ODBC, HsqlDB, CrystalReports, Eclipse BIRT, Tomcat, jetty, Ant, Log4j, jUnit, dbUnit, Hudson, PMD, Checkstyle, FindBugs, Classcycle, Cobertura, JavaNcss, JDepend, RIATest}
+     \ecvitem{}{}
+
+
+
+
+     \ecvitem{\textbf{Jan 2008 - Jan 2010}}{\textbf{ConProv}}
+     \ecvitem{Company}{Consileon Polska}
+     \ecvitem{Customer}{\color{DarkBlue}{Consileon Business Consultancy GmBH, Karlsruhe, Germany}}
+     \ecvitem{Role(s)}{Senior Software Developer}
+     \ecvitem{Responsibilities}{design and implementation of reporting module; specification of embedded "Formula" language - design and implementation (grammar, lexer, parser, translator); design and implementation of notification module; 
+design and implementation of scheduling module}
+\ecvitem{Project Description}{Client-server application for modelling process of calculating commissions in various business models. Intended to be off the shelf product with a number of customization and extensions possibilities. Multiple target environments (various databases)}
+     \ecvitem{Technologies}{J2EE, Spring, Adobe Flex, BlazeDS, Hibernate, Web Services (Apache CXF), Acegi, Quartz, ANTLRv3, Hesian, Oracle, MSSQL, DB2, MySQL, MS Access, ODBC, HsqlDB, CrystalReports, Eclipse BIRT, Tomcat, jetty, Ant, Log4j, jUnit, dbUnit, Hudson, PMD, Checkstyle, FindBugs, Classcycle, Cobertura, JavaNcss, JDepend, RIATest}
+     \ecvitem{}{}
+
+
+
+     \ecvitem{\textbf{Aug 2007 - May 2008}}{\textbf{Account Data Management (J2EE port)}}
+     \ecvitem{Company}{Consileon Polska}
+     \ecvitem{Customer}{\color{DarkBlue}{DAB Bank, Munich, Germany}}
+     \ecvitem{Role(s)}{Senior Developer}
+     \ecvitem{Responsibilities}{analysis of possible migration scenarios; evaluating different technologies; implementation}
+     \ecvitem{Project Description}{migration from ATG Dynamo to J2EE; heavy refactoring of existing code base; maintenance}
+     \ecvitem{Technologies}{Java, ATG Dynamo Application Server, Oracle DB, Swing, MQSeries, EJB, FTP, XML, XQuery, Spring, Hessian, Axis, SOAP, Ant, Eclipse, Log4j, jUnit, Cruise Control}
+     \ecvitem{}{}
+
+
+     \ecvitem{\textbf{May 2007 - Nov 2007}}{\textbf{Delphi to J2EE Migration}}
+     \ecvitem{Company}{Consileon Polska}
+     \ecvitem{Customer}{\color{DarkBlue}{HORBACH (AWD Group), Cologne, Germany}}
+     \ecvitem{Role(s)}{Technical Team Leader, Senior Developer}
+     \ecvitem{Responsibilities}{technical lead; estimations/planning; design and development of JEE ports}
+     \ecvitem{Project Description}{Porting the existing set of legacy business applications from Delphi (spread among legacy databases) to modern JEE5 application running on Weblogic; integration with existing BEA Portal application}
+     \ecvitem{Technologies}{JEE5, JSF, EJB3.0, JPA, Hibernate, TopLink, MS SQLServer, BEA Weblogic 10.x, BEA Portal, Pervasive, Interbase, Oracle DB, Paradox, JUnit, EJBUnit}
+     \ecvitem{}{}
+
+
+
+     \ecvitem{\textbf{May 2006 - Aug 2006}}{\textbf{Financial Application}}
+     \ecvitem{Company}{Consileon Polska}
+     \ecvitem{Customer}{\color{DarkBlue}{PlanetHome AG, Munich, Germany}}
+     \ecvitem{Role(s)}{Senior Developer}
+     \ecvitem{Responsibilities}{bug fixing and implementing change requests that were not yet solved/implemented due to its complexity}
+     \ecvitem{Project Description}{web application (Internet and intranet) for managing real estate services including financial agency and commissioning; the portal widely used both by end customers and in-house brokers}
+     \ecvitem{Technologies}{J2EE, JSP, Oracle, JBoss, EJB, Struts, Web Services, JavaMail, HTML, Javascript, PDFlib, Ant, Log4j, jUnit}
+     \ecvitem{}{}
+
+     
+     \ecvitem{\textbf{Jan 2006 - Apr 2006}}{\textbf{Controlling Tool}}
+     \ecvitem{Company}{Consileon Polska}
+     \ecvitem{Customer}{Consileon Polska}
+     \ecvitem{Role(s)}{Senior Software Developer}
+     \ecvitem{Responsibilities}{Design and implementation.}
+     \ecvitem{Project Description}{Intranet web application for project management, time reporting, invoicing. The application was later on also deployed in Consileon GmbH.}
+     \ecvitem{Technologies}{Java, Struts, PostgreSQL, Hibernate, XSLT}
+     \ecvitem{}{}
+
+
+
+     \ecvitem{\textbf{Dec 2006 - Apr 2007}}{\textbf{Account Data Management}}
+     \ecvitem{\textbf{Apr 2005 - Dec 2005}}{}
+     \ecvitem{Company}{Consileon Business Consultancy GmBH, Consileon Polska}
+     \ecvitem{Customer}{\color{DarkBlue}{DAB Bank, Munich, Germany}}
+     \ecvitem{Role(s)}{Senior Developer}
+     \ecvitem{Responsibilities}{Maintenance of existing code; design and development of integration with new external systems (FlexCube / iFlex) }
+     \ecvitem{Project Description}{Development of server and a fat-client application for centralised management of bank customers’ data. Central point for all administrative operations on a customer account. Integration platform for a number of sub-services. The project was overtaken from the other company.}
+     \ecvitem{Technologies}{Java, ATG Dynamo Application Server, Oracle DB, Swing, MQSeries, EJB, JMS, FTP, XML, XQuery}
+     \ecvitem{}{}
+
+
+
+
+     \ecvitem{\textbf{Mar 2004 - Nov 2004}}{\textbf{Electronical Activation}}
+     \ecvitem{Company}{BLStream (formely BellStream)}
+     \ecvitem{Customer}{\color{DarkBlue}{T-Mobile (formely PTC Era), Poland}}
+     \ecvitem{Role(s)}{Technical Team Leader, Senior Developer, Trainer}
+     \ecvitem{Responsibilities}{application design, team  leading, performing trainings for customer's IT team  (Struts and J2EE Design Patterns)}
+     \ecvitem{Project Description}{3-tier application for internal use to exchange information within dealers network about new  customers}
+     \ecvitem{Technologies}{Java, JSP, Struts, XML, BEA Weblogic} \ecvitem{}{}
+
+
+
+     \ecvitem{\textbf{Nov 2003 - Mar 2004}}{\textbf{xPression Integration}}
+     \ecvitem{Company}{BLStream (formely BellStream)}
+     \ecvitem{Customer}{\color{DarkBlue}{Tapiola Group, Finland}}
+     \ecvitem{Role(s)}{Software Developer}
+     \ecvitem{Responsibilities}{customization of 3rd party software}
+     \ecvitem{Project Description}{evaluation and customization of an xPression (by EMC Document Sciences) application for needs of Tapiola corporation}
+     \ecvitem{Technologies}{xPression, Java} \ecvitem{}{}
+
+
+
+     \ecvitem{\textbf{May 2003 - Dec 2003}}{\textbf{SPML2PS}}
+     \ecvitem{Company}{BLStream (formely BellStream)}
+     \ecvitem{Customer}{\color{DarkBlue}{Tapiola Group, Finland}}
+     \ecvitem{Role(s)}{Software Engineer}
+     \ecvitem{Responsibilities}{development of low-level translator converting documents from XML format to pure Postscript code including embedded or external resources, using caching and other features}
+     \ecvitem{Project Description}{XML to Postscript translator; creation of Postscript procedures library}
+     \ecvitem{Technologies}{Java, XML, XSLT, Postscript, Linux} \ecvitem{}{}
+
+
+
+     \ecvitem{\textbf{Jan 2003 - May 2003}}{\textbf{Kronodoc Image}}
+     \ecvitem{Company}{BLStream (formely BellStream)}
+     \ecvitem{Customer}{\color{DarkBlue}{Wärtsilä Corporation, Finland}}
+     \ecvitem{Role(s)}{Software Engineer}
+     \ecvitem{Responsibilities}{developing smart component for caching client's legacy content management system providing own SQL-like language for building queries; portlets development}
+     \ecvitem{Project Description}{integration of the main corporate portal with CMS-like system}
+     \ecvitem{Technologies}{JLex, JavaCUP, EJB, J2EE, Weblogic 6.1, BEA Commerce, HP-UX, Linux}
+     \ecvitem{}{}
+
+
+
+
+     \ecvitem{\textbf{Apr 2002 - Feb 2003}}{\textbf{Wärtsilä Workroom}}
+     \ecvitem{Company}{BLStream (formely BellStream)}
+     \ecvitem{Customer}{\color{DarkBlue}{Wärtsilä Corporation, Finland}}
+     \ecvitem{Role(s)}{Web Application Developer}
+     \ecvitem{Responsibilities}{portal application development – involved in the whole cycle from design to roll-out}
+     \ecvitem{Project Description}{development of the main corporate internal portal (2000 users)}
+     \ecvitem{Technologies}{J2EE, JSP, Weblogic 6.1, BEA Commerce, HP-UX, Linux}
+     \ecvitem{}{}
+
+
+
+
+     \ecvitem{\textbf{Apr 2002 - Dec 2002}}{\textbf{SpiralR2 / Coality}}
+     \ecvitem{Company}{BLStream (formely BellStream)}
+     \ecvitem{Customer}{internal}
+     \ecvitem{Role(s)}{Architect, Web Application Developer}
+     \ecvitem{Responsibilities}{design and implementation of module for time reporting and projects management}
+     \ecvitem{Project Description}{internal intranet application – project management and time reporting}
+     \ecvitem{Technologies}{J2EE, Servlets, JSP, XML, XSLT, Tomcat, Weblogic, PostgreSQL}
+     \ecvitem{}{}
+
+
+     \ecvitem{\textbf{Jul 2000 - Mar 2002}}{\textbf{SKID (rollout and customization)}}
+     \ecvitem{Company}{Macrologic (formely MacroSoft)}
+     \ecvitem{Customer}{multiple local small to medium companies}
+     \ecvitem{Role(s)}{Trainer, Deployment Specialist, Programmer}
+     \ecvitem{Responsibilities}{creating new and modifying existing system's modules; configuring system due to specific customer's requirements; deployment, maintenance, bugfixing; training customers' employees; data recovery; integration or migration with legacy systems}
+     \ecvitem{Project Description}{customization of SKID (integrated business management system – “micro ERP”) for multiple small or middle size companies; covered areas: accounting, warehouse management, workflow management, payroll and human resources, integration with on-line banking systems}
+     \ecvitem{Technologies}{Macrobase Server, Macrobasic, Linux, Windows Terminal Server}
+     \ecvitem{}{}
+
+
+    
+     \ecvsection{\color{MidnightBlue}{ADDITIONAL INFORMATION}}
+     \ecvitem{Driver licence}{B-cat., issued on XX/19YY}
+     \ecvitem{}{}
+     \ecvitem{Personal interests}{programming languages, software development, mountain biking, bouldering, kiteskiing, kitesurfing, 4x4 cars}
+
+
+
+
+
+  \end{europecv}
+
+  \vfill
+ 
+  \textbf{Legal notice: }{I hereby agree for my personal data, included in my job application, to be processed in line with the needs of recruitment, in accordance with the Law on Personal Data Protection of 29 August 1997 (Law Gazette from 2002, No.101, heading 926, as amended).} 
+
+
+\end{document} 
