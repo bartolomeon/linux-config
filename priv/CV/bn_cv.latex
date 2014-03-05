@@ -16,7 +16,7 @@
 \ecvnationality{Polish}
 \ecvdateofbirth{May 06, 1977}
 \ecvbeforepicture{\raggedleft}
-\ecvpicture[height=3cm]{bartek}
+\ecvpicture[height=3cm]{bartlomiej_nicka}
 \ecvafterpicture{\ecvspace{-3.5cm}}
 
 
@@ -160,7 +160,7 @@
      \ecvitem{Customer}{\color{DarkBlue}{net-M AG, Düsseldorf, Germany}}
      \ecvitem{Role(s)}{Senior Developer}
      \ecvitem{Responsibilities}{Technical design and implementation of the application.}
-     \ecvitem{Project Description}{A stand-alone application that is able to retrieve a mobile applications data (games, ringtones, wallpapers) from the content provider (Electronic Arts) repository; parses it, categorize, downloads all related media files, creates a package which is sent to the client’s (net-M) CMS system. In case of any errors application is able to pause, report errors via mail and later resume its work.}
+     \ecvitem{Project Description}{A stand-alone application that is able to retrieve a mobile applications data (games, ringtones, wallpapers) from the content provider (Electronic Arts) repository; parses it, categorize, downloads all related media files, creates a package which is sent to the client’s (net-M) MINICK CMS system. In case of any errors application is able to pause, report errors via mail and later resume its work.}
      \ecvitem{Technologies}{Java, Spring 3, Spring Integration, JAXB, Apache CXF, Maven}
      \ecvitem{}{}
 
