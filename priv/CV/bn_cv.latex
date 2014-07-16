@@ -96,8 +96,28 @@
      \ecvitem{May~2010}{\textbf{PRINCE2\textregistered Foundation Examination}}
      \ecvitem{}{APM Group Ltd, License 02317292-01-FECQ}
     
+     \ecvsection{\color{MidnightBlue}{CONFERENCES}}
+     \ecvitem{Apr~2014}{\textbf{"Being just a programmer is now not enough."}}
+     \ecvitem{}{Lecturer, {\href{http://2014.devcrowd.pl/prelegenci/\#Bart\%C5\%82omiej+Ni\%C4\%87ka}{DevCrowd'2014}}}
+     \ecvitem{}{Szczecin, Poland}
+     \ecvitem{}{}
+
+     \ecvitem{Apr~2012}{\textbf{"Building own Domain Specific Languages with ANTLR framework."}}
+     \ecvitem{}{Lecturer, {\href{http://2012.devcrowd.pl/index.php/dsl-z-antlr/index.html}{DevCrowd'2012}}}
+     \ecvitem{}{Szczecin, Poland}
+
+
 
      \ecvsection{\color{MidnightBlue}{PROJECTS EXPERIENCE}}
+
+     \ecvitem{\textbf{Dec 2013 - present}}{\textbf{Analysis, technical support for Sells Department}}
+     \ecvitem{Company}{Consileon Polska}
+     \ecvitem{Customer}{\color{DarkBlue}{various}}
+     \ecvitem{Role(s)}{IT Consultant}
+     \ecvitem{Responsibilities}{Technical support for Sells Department - making a risk analysis of potential new projects. Direct talks with customers. Preparing detailed efforts estimations for very different scale of projects (from 40MDs up to 3000+MDs). One project involves building a data-center for Szczecin city (Cloud 4 Cities) based on IaaS/PaaS solutions.}
+     \ecvitem{Technologies}{OpenShift, OpenStack, CloudFoundry and others}
+     \ecvitem{}{}
+
 
      \ecvitem{\textbf{Mar 2012 - Oct 2013}}{\textbf{Google Carrier Billing 3.0 / Microsoft Carrier Billing}}
      \ecvitem{Company}{Consileon Polska}
