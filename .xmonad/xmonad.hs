@@ -7,7 +7,7 @@ import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
 
-import XMonad.Actions.Volume
+--import XMonad.Actions.Volume
 import XMonad.Actions.GridSelect
 import XMonad.Actions.WindowBringer
 import XMonad.Actions.FloatKeys
@@ -45,8 +45,8 @@ import Graphics.X11.ExtraTypes.XF86
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
-import XMonad.Prompt.MPD
-import qualified Network.MPD as MPD
+--import XMonad.Prompt.MPD
+--import qualified Network.MPD as MPD
 
 import Data.Monoid
 
@@ -145,7 +145,7 @@ main = do
         , ((mod4Mask, xK_p), runOrRaisePrompt myXPConfig)
         , ((mod4Mask, xK_y), manPrompt myXPConfig)
 	, ((mod4Mask .|. shiftMask, xK_f), fullFloatFocused)  
-	, ((mod4Mask, xK_F2), addMatching MPD.withMPD defaultXPConfig [MPD.Artist, MPD.Album] >> return ())
+	--, ((mod4Mask, xK_F2), addMatching MPD.withMPD defaultXPConfig [MPD.Artist, MPD.Album] >> return ())
 	, ((0, xF86XK_Launch8    ), spawn "mpc --no-status prev")   -- mod1-z %! MPD: Play the previous song in the current playlist
 	, ((0, xF86XK_Launch9  ), spawn "mpc --no-status next")   -- mod1-b %! MPD: Play the next song in the current playlist
 	, ((0, xF86XK_AudioPrev    ), spawn "mpc --no-status prev")   -- mod1-z %! MPD: Play the previous song in the current playlist
@@ -170,6 +170,7 @@ main = do
         , ((0, 0x1008ff12), spawn "amixer set Master toggle > /dev/null")
 	, ((mod4Mask, xK_F5), spawn "disper -s")
 	, ((mod4Mask, xK_F6), spawn "disper -S")
+	, ((mod4Mask, xK_F7), spawn "disper -s 'DP-1'; disper  -e -d 'DP-1','VGA-0' -t right")
         ]
 
 

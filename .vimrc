@@ -38,7 +38,9 @@ Bundle 'https://github.com/kaihendry/vim-html5'
 
 
 Bundle 'https://github.com/scrooloose/nerdtree'
-
+"Bundle 'https://github.com/Lokaltog/powerline.git'
+Bundle 'https://github.com/klen/python-mode.git'
+Bundle 'https://github.com/kien/ctrlp.vim.git'
 filetype plugin indent on     " required!
 "
 " Brief help
@@ -89,9 +91,22 @@ endif
 " run JSHint automatically on each JS file
  "autocmd! BufWritePost *.js JSHint
  "
+ autocmd! BufWritePost *.js JSHint
  
 set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set mouse=a
+
+set hlsearch
+
+" Configure browser for haskell_doc.vim
+let g:haddock_browser = "open"
+let g:haddock_browser_callformat = "%s %s"
+
+
+"indend a block of code by <,>
+vnoremap < <gv
+vnoremap > >gv
 

@@ -112,26 +112,28 @@ fi
 
 GRADLE_HOME=/opt1/soft/java/gradle-1.10
 CXF_HOME=/opt1/soft/java/apache-cxf-2.7.4
-JAVA_HOME=/opt1/soft/java/jdk1.7.0_13
-MAVEN_PATH=/opt1/soft/java/apache-maven-3.0.5
-NODE_PATH=/opt1/soft/node-v0.10.20-linux-x64/bin
+JAVA_HOME=/opt1/soft/java/jdk1.8.0
+MAVEN_PATH=/opt1/soft/java/apache-maven-3.2.1
+NODE_BASE_PATH=/opt1/soft/node-v0.10.32-linux-x64
 NODE_PATH=$NODE_PATH:npm
 
 PATH=\
 $GRADLE_HOME/bin:\
-$NODE_PATH:\
+$NODE_BASE_PATH/bin:\
 ~/node_modules/.bin/:\
 $JAVA_HOME/bin:\
 /opt1/soft/doctorjs/bin:\
 $MAVEN_PATH/bin:\
 $CXF_HOME/bin:\
+$HOME/.bin:\
+$HOME/.local/bin:\
 :$PATH
 
 
 
 ANDROID_HOME=/opt1/soft/adt-bundle-linux-x86_64-20131030/sdk
 
-NODE_PATH="/opt1/soft/node-v0.10.20-linux-x64/lib/node_modules:/usr/local/lib/jsctags:${NODE_PATH}"
+export NODE_PATH=${NODE_BASE_PATH}:/usr/local/lib/jsctags:${NODE_BASE_PATH}/bin:${NODE_BASE_PATH}/lib/node_modules
 
 alias cd_mbg='cd ~/work/netM/mbg'
 alias cd_mbg_uk='cd ~/work/netM/mbg/mbg-extern-ukthree3api'
@@ -140,7 +142,7 @@ alias cd_mbg_swiss='cd ~/work/netM/mbg/mbg-extern-chswisscomce'
 alias cd_mbg_at='cd ~/work/netM/mbg/mbg-extern-atdcb3vasbilling'
 alias cd_pg='cd ~/work/GTM/gae-gtm-pg'
 
-alias cd_symos='cd ~/work/altom_symos/trunk'
+alias cd_symos='cd ~/work/altom_symos/symos-server'
 
 export EDITOR=vim
 alias svnkdiff='svn diff --diff-cmd kdiff3'
@@ -163,7 +165,6 @@ if [ -z $PA_PID ]; then
 #else 
   #echo "Pulseaudio already running with pid=$PA_PID";
 fi
-export NODE_PATH=/usr/local/lib/jsctags:/opt1/soft/node-v0.10.20-linux-x64/bin:npm:/opt1/soft/node-v0.10.20-linux-x64/lib/node_modules
 
 
 
