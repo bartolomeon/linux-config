@@ -170,7 +170,9 @@ main = do
         , ((0, 0x1008ff12), spawn "amixer set Master toggle > /dev/null")
 	, ((mod4Mask, xK_F5), spawn "disper -s")
 	, ((mod4Mask, xK_F6), spawn "disper -S")
-	, ((mod4Mask, xK_F7), spawn "disper -s 'DP-1'; disper  -e -d 'DP-1','VGA-0' -t right")
+	, ((mod4Mask, xK_F7), spawn "disper -s 'DP-1'; disper  -e -d 'DP-1','VGA-0' -t right") -- praca Samsung + Sony
+	, ((mod4Mask, xK_F8), spawn "disper -s 'HDMI-0'; disper  -e -d 'HDMI-0','VGA-0' -t right") -- dom Samsung + Iiyama
+
         ]
 
 
