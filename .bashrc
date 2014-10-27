@@ -148,6 +148,9 @@ export EDITOR=vim
 alias svnkdiff='svn diff --diff-cmd kdiff3'
 alias cd_gcb='cd ~/work/netM/GCB/'
 
+#fixes less/tail mode for files which inode gets changed by an updating process
+alias less='less --follow-name'
+
 
 export CXF_HOME JAVA_HOME MAVEN_PATH NODE_PATH ANDROID_HOME GRADLE_HOME
 
