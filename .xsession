@@ -14,7 +14,8 @@ trayer --edge top --align right --SetDockType true --SetPartialStrut true \
 #xsetroot -solid midnightblue
 
 
-xloadimage -onroot -fullscreen ~/.xmonad/swahili-wallpaper.png -gamma 1.6 -border black
+#xloadimage -onroot -fullscreen ~/.xmonad/swahili-wallpaper.png -gamma 1.6 -border black
+feh --bg-fill ~/.xmonad/swahili-wallpaper.png
  
 # Fire up apps
  
