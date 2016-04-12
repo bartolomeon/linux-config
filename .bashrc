@@ -113,9 +113,10 @@ fi
 GRADLE_HOME=/opt1/soft/java/gradle-1.10
 CXF_HOME=/opt1/soft/java/apache-cxf-2.7.4
 JAVA_HOME=/opt1/soft/java/jdk1.8.0
-MAVEN_PATH=/opt1/soft/java/apache-maven-3.2.1
-NODE_BASE_PATH=/opt1/soft/node-v0.10.32-linux-x64
+MAVEN_PATH=/opt1/soft/java/maven
+NODE_BASE_PATH=/opt1/soft/node
 NODE_PATH=$NODE_PATH:npm
+SCALA_HOME=/opt1/soft/scala
 
 PATH=\
 $GRADLE_HOME/bin:\
@@ -127,13 +128,14 @@ $MAVEN_PATH/bin:\
 $CXF_HOME/bin:\
 $HOME/.bin:\
 $HOME/.local/bin:\
+$SCALA_HOME/bin:\
 :$PATH
 
 
 
 ANDROID_HOME=/opt1/soft/adt-bundle-linux-x86_64-20131030/sdk
 
-export NODE_PATH=${NODE_BASE_PATH}:/usr/local/lib/jsctags:${NODE_BASE_PATH}/bin:${NODE_BASE_PATH}/lib/node_modules
+export NODE_PATH="${NODE_BASE_PATH}/lib/node_modules:${NODE_BASE_PATH}:/usr/local/lib/jsctags:${NODE_BASE_PATH}/bin"
 
 alias cd_mbg='cd ~/work/netM/mbg'
 alias cd_mbg_uk='cd ~/work/netM/mbg/mbg-extern-ukthree3api'
@@ -169,5 +171,31 @@ if [ -z $PA_PID ]; then
   #echo "Pulseaudio already running with pid=$PA_PID";
 fi
 
+#alias gitl='git log --oneline --graph --color --all --decorate'
+alias gitl='git log --all --decorate=short --graph --color --date=short --pretty=format:"%Cblue%h%Creset %C(yellow)%cd%Creset %C(bold blue)<%an>, %Cgreen(%ar)%Creset | %s"'
+alias gits='git status'
+
+alias gitaddm='git add `git status| grep modified: | cut -d: -f2`'
 
 
+
+export C4C_ENV="dev-local"
+
+#Yeehaw!!!
+set -o vi
+bind -m vi-insert "\C-l":clear-screen
+
+
+export GREP_OPTIONS='--color=auto'
+
+
+export PATH=/opt1/soft/node/bin:$PATH
+
+export PATH=~/.bin:$PATH
+
+alias cd_nyx='cd ~/work/NYX/cms-nyx-git/source'
+alias cd_gerpol='cd ~/work/altom_gerpol/sources'
+alias cd_daybreak='cd ~/work/Espeo/Daybreak/boxintegration'
+alias cd_hrtool='cd ~/work/HRTool/hrtool/'
+
+alias cd_ink='cd ~/work/INK/ink-vkey/'
