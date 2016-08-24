@@ -28,8 +28,9 @@ Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
 " ...
 "
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'pangloss/vim-javascript'
+"Bundle 'jelera/vim-javascript-syntax'
+"Bundle 'pangloss/vim-javascript'
+
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Tagbar'
@@ -40,9 +41,13 @@ Bundle 'https://github.com/kaihendry/vim-html5'
 
 
 Bundle 'https://github.com/scrooloose/nerdtree'
-"Bundle 'https://github.com/Lokaltog/powerline.git'
+Bundle 'https://github.com/Lokaltog/powerline.git'
 Bundle 'https://github.com/klen/python-mode.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
+
+Bundle 'Yggdroot/indentLine' 
+
+Bundle 'JamshedVesuna/vim-markdown-preview'
 
 "CtrlP config: (c - current file's dir, r - up to dir containing .git/.svn)
 let g:ctrlp_working_path_mode = 'c'
@@ -82,14 +87,15 @@ set t_Co=256
 let g:solarized_termcolors=256
 syntax enable
 "colorscheme distinguished
+"colorscheme solarized
+colorscheme lucius
 if has('gui_running')
-    "colorscheme solarized
-    "set background=light
-    colorscheme Tomorrow-Night-Eighties
+  set background=light
+  "colorscheme Tomorrow-Night-Eighties
 else
-    "colorscheme desert256
-    colorscheme Tomorrow-Night-Bright
-    "set background=dark
+  "colorscheme desert256
+  "colorscheme Tomorrow-Night-Bright
+  set background=dark
 endif
 
 " block cursor! (yep)
@@ -104,10 +110,10 @@ endif
 " imap <right> <nop>
 
 " run JSHint automatically on each JS file
- "autocmd! BufWritePost *.js JSHint
- "
- autocmd! BufWritePost *.js JSHint
- 
+"autocmd! BufWritePost *.js JSHint
+"
+" autocmd! BufWritePost *.js JSHint
+
 set smartindent
 set tabstop=2
 set shiftwidth=2
@@ -133,7 +139,75 @@ let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'"
 
-
 " close a buffer with leader + bq
 "nunmap <leader>b
 nmap <leader>bq :bp <BAR> bd #<cr>
+
+" highlights current line in INSERT mode
+autocmd InsertEnter,InsertLeave * set cul!
+
+noremap <F8> :PymodeLintAuto<CR>
+
+
+
+
+
+
+" Syntastic settings
+autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc', '.;') != '' ? ['eslint'] : (findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['standard'] )
+
+let g:syntastic_my_eslintfile = findfile('.eslintrc', '.;') 
+let g:syntastic_javascript_eslint_args = "--no-eslintrc --config " . g:syntastic_my_eslintfile
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+
+" indentLine
+
+" Vim
+let g:indentLine_color_term = 238
+
+"GVim
+let g:indentLine_color_gui = '#A4E57E'
+
+" none X terminal
+let g:indentLine_color_tty_light = 7 " (default: 4)
+let g:indentLine_color_dark = 2 " (default: 2)
+
+
+" You can also use one of ¦, ┆, ︙ or │ to display more beautiful lines. 
+let g:indentLine_char = '┆'
+
+"Un-hides quotes in JSON files
+"set conceallevel=0
+"autocmd FileType * setlocal conceallevel=0
+
+
+
+
+" map Syntastic's error navigation 
+nnoremap [e :ll<cr>:lprev<cr>
+nnoremap ]e :ll<cr>:lnext<cr>
+
+nnoremap [b :bp<cr>
+nnoremap ]b :bn<cr>
+
+
+"  Plasticboy (markdown highlighting) - make it underlined, instead of yellow
+hi link mkdLineBreak Underlined
+" to disable line break highlighting:
+"syn clear mkdLineBreak
+
+
+" vim-markdown-preview"
+let vim_markdown_preview_github=1 
+let vim_markdown_preview_hotkey='<c-m>'
+let vim_markdown_preview_browser='Iceweasel'
+
+

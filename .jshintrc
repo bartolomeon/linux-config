@@ -1,5 +1,5 @@
 {
-    "passfail"      : false,  
+  "passfail"      : false,  
     "maxerr"        : 100,    
 
 
@@ -16,12 +16,12 @@
     "dojo"          : false,
 
     "predef"        : [  
-        "angular",
-		"http"
+      "angular",
+    "http"
     ],
 
 
-    
+
     "debug"         : false,  
     "devel"         : true,   
 
@@ -60,6 +60,10 @@
     "plusplus"      : false,  
     "sub"           : false,  
     "trailing"      : true,   
-    "white"         : false,  
-    "indent"        : 2       
+    "white"         : true,  
+    "indent"        : 2,
+
+    "globals": {
+      "angular": false
+    }
 }

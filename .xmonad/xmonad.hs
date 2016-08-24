@@ -88,7 +88,7 @@ myManageHook = composeAll
     ,  className =? "Skype" --> doF (W.shift "chat")
     ]
  
-myWorkspaces = ["1:chat","2:web","3","4:code","5:mail","6","7","8:media"]  
+myWorkspaces = ["1:chat","2:web","3:work","4:code","5:mail","6","7","8:media"]  
   
 
 oldmyLayout = avoidStruts $ tiled ||| Mirror tiled ||| Full  
@@ -169,10 +169,10 @@ main = do
         --, ((mod4Mask, xF86XK_AudioMute ), toggleMute    >> return ())
         , ((0, 0x1008ff12), spawn "amixer set Master toggle > /dev/null")
 	, ((mod4Mask, xK_F5), spawn "disper -s")
-	, ((mod4Mask, xK_F6), spawn "disper -S")
+	, ((mod4Mask, xK_F6), spawn "disper -S; disper -S 'LVDS-0'")
 	, ((mod4Mask, xK_F7), spawn "disper -s 'DP-1'; disper  -e -d 'DP-1','VGA-0' -t right") -- praca Samsung + Sony
 	, ((mod4Mask, xK_F8), spawn "disper -s 'HDMI-0'; disper  -e -d 'HDMI-0','VGA-0' -t right") -- dom Samsung + Iiyama
-
+	, ((mod4Mask, xK_F9), spawn "disper -s 'VGA-0'; disper  -e -d 'VGA-0','DP-0' -t right") -- praca szczecin 2xGateway
         ]
 
 
